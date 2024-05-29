@@ -10,18 +10,19 @@
     <div class="container">
         <h1>Jeu de Taquin</h1>
         <div id="level-selection">
-            <label for="levels">Choisissez un niveau : </label>
+            <label for="levels">Niveau : </label>
             <select id="levels">
                 <option value="3">Facile (3x3)</option>
                 <option value="4">Intermédiaire (4x4)</option>
                 <option value="5">Avancé (5x5)</option>
             </select>
+            <label for="imageType">Image : </label>
             <select id="imageType">
                 <option value="torreaux">Torreaux</option>
                 <option value="bateaux">Bateaux</option>
                 <option value="chiffre">Chiffres</option>
             </select>
-            <button onclick="startGame()">Démarrer le jeu</button>
+            <button class="btn" onclick="startGame()">Démarrer le jeu</button>
         </div>
         <div class="game-area">
             <div id="puzzle-container"></div>
