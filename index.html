@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Taquin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jeu de Taquin</h1>
+        <div id="level-selection">
+            <label for="levels">Choisissez un niveau : </label>
+            <select id="levels">
+                <option value="3">Facile (3x3)</option>
+                <option value="4">Intermédiaire (4x4)</option>
+                <option value="5">Avancé (5x5)</option>
+            </select>
+            <select id="imageType">
+                <option value="torreaux">Torreaux</option>
+                <option value="bateaux">Bateaux</option>
+                <option value="chiffre">Chiffres</option>
+            </select>
+            <button onclick="startGame()">Démarrer le jeu</button>
+        </div>
+        <div class="game-area">
+            <div id="puzzle-container"></div>
+            <div id="image-preview-container">
+                <div id="image-legend">Aperçu de l'image cible :</div>
+                <img id="image-preview" src="" alt="Puzzle Preview">
+            </div>
+        </div>
+        <div id="initial-message">Cliquez sur "Démarrer le jeu" pour commencer.</div>
+        <div id="success-message" class="hidden">Félicitations, vous avez réussi !</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
